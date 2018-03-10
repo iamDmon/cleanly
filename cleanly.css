@@ -1,0 +1,463 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+}
+
+/*
+*===================================================================================================
+*                                     TEXT ELEMENTS
+*===================================================================================================
+*/
+
+a {
+  -webkit-text-decoration-skip: objects;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+.code {
+    
+}
+*/
+
+em {
+  color: #f0506e;
+}
+/*
+ * Insert
+ */
+ins {
+  background: #ffd;
+  color: #666;
+  text-decoration: none;
+}
+/*
+ * Mark
+ */
+mark {
+  background: #ffd;
+  color: #666;
+}
+/*
+ * Quote
+ */
+q {
+  font-style: italic;
+}
+
+/*
+ * Common for all headings.
+ */
+h1,
+.cln-h1,
+h2,
+.cln-h2,
+h3,
+.cln-h3,
+h4,
+.cln-h4,
+h5,
+.cln-h5,
+h6,
+.cln-h6 {
+  margin: 0 0 20px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+  text-transform: none;
+}
+/*
+ * Different Sizes for heading :p
+ */
+h1,
+.cln-h1 {
+  font-size: 2.625rem;
+  line-height: 1.2;
+}
+h2,
+.cln-h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+h3,
+.cln-h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+h4,
+.cln-h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+h5,
+.cln-h5 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+h6,
+.cln-h6 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/*
+*===================================================================================================
+*                                             MEDIA
+*===================================================================================================
+*/
+
+/*
+* Center the all media and graphic elements vertically
+*/
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+audio,
+canvas,
+img,
+video {
+  /* 1 */
+  max-width: 100%;
+  /* 2 */
+  height: auto;
+  /* 3 */
+  box-sizing: border-box;
+}
+
+/*
+*===================================================================================================
+*                                         SPACING
+*===================================================================================================
+*/
+
+.cln-center {
+    margin: auto;
+    text-align: center;
+}
+.cln-left {
+    margin:auto auto auto 0;
+    text-align: left;
+}
+.cln-right {
+    margin:auto 0 auto auto;
+    text-align: right;
+}
+/*
+.cln-midleft {
+    margin:auto;
+    left: 25%;
+}
+.cln-midright {
+    margin:auto;
+    left: 75%;
+*/
+}
+
+/*
+ * Default
+ */
+[class*='cln-align'] {
+  display: block;
+  margin-bottom: 30px;
+}
+* + [class*='cln-align'] {
+  margin-top: 30px;
+}
+/*
+ * Center
+ */
+.cln-align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+ * Left/Right
+ */
+.cln-align-left {
+  margin-top: 0;
+  margin-right: 30px;
+  float: left;
+}
+.cln-align-right {
+  margin-top: 0;
+  margin-left: 30px;
+  float: right;
+}
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  .cln-align-left\@s {
+    margin-top: 0;
+    margin-right: 30px;
+    float: left;
+  }
+  .cln-align-right\@s {
+    margin-top: 0;
+    margin-left: 30px;
+    float: right;
+  }
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  .cln-align-left\@m {
+    margin-top: 0;
+    margin-right: 30px;
+    float: left;
+  }
+  .cln-align-right\@m {
+    margin-top: 0;
+    margin-left: 30px;
+    float: right;
+  }
+}
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  .cln-align-left\@l {
+    margin-top: 0;
+    float: left;
+  }
+  .cln-align-right\@l {
+    margin-top: 0;
+    float: right;
+  }
+  .cln-align-left,
+  .cln-align-left\@s,
+  .cln-align-left\@m,
+  .cln-align-left\@l {
+    margin-right: 40px;
+  }
+  .cln-align-right,
+  .cln-align-right\@s,
+  .cln-align-right\@m,
+  .cln-align-right\@l {
+    margin-left: 40px;
+  }
+}
+/* Large screen and bigger */
+@media (min-width: 1600px) {
+  .cln-align-left\@xl {
+    margin-top: 0;
+    margin-right: 40px;
+    float: left;
+  }
+  .cln-align-right\@xl {
+    margin-top: 0;
+    margin-left: 40px;
+    float: right;
+  }
+}
+
+/*
+*===================================================================================================
+*                                          TABLE
+*===================================================================================================
+*/
+
+.cln-table {
+  /* 1 */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* 2 */
+  width: 100%;
+  /* 3 */
+  margin-bottom: 20px;
+}
+/* Add margin if adjacent element */
+* + .cln-table {
+  margin-top: 20px;
+}
+/* Header cell
+ ========================================================================== */
+/*
+ * 1. Style
+ */
+.cln-table th {
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: bottom;
+  /* 1 */
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #999;
+  text-transform: uppercase;
+}
+/* Cell
+ ========================================================================== */
+.cln-table td {
+  padding: 16px 12px;
+  vertical-align: top;
+}
+/*
+ * Remove margin from the last-child
+ */
+.cln-table td > :last-child {
+  margin-bottom: 0;
+}
+/* Footer
+ ========================================================================== */
+.cln-table tfoot {
+  font-size: 0.875rem;
+}
+/* Caption
+ ========================================================================== */
+.cln-table caption {
+  font-size: 0.875rem;
+  text-align: left;
+  color: #999;
+}
+/* Row
+ ========================================================================== */
+.cln-table > tr.cln-active,
+.cln-table tbody tr.cln-active {
+  background: #ffd;
+}
+/* Alignment modifier
+ ========================================================================== */
+.cln-table-middle,
+.cln-table-middle td {
+  vertical-align: middle !important;
+}
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Divider
+ */
+.cln-table-divider > tr:not(:first-child),
+.cln-table-divider > :not(:first-child) > tr,
+.cln-table-divider > :first-child > tr:not(:first-child) {
+  border-top: 1px solid #e5e5e5;
+}
+/*
+ * Striped
+ */
+.cln-table-striped > tr:nth-of-type(odd),
+.cln-table-striped tbody tr:nth-of-type(odd) {
+  background: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*
+ * Hover
+ */
+.cln-table-hover > tr:hover,
+.cln-table-hover tbody tr:hover {
+  background: #ffd;
+}
+/* Size modifier
+ ========================================================================== */
+.cln-table-small th,
+.cln-table-small td {
+  padding: 10px 12px;
+}
+/* Justify modifier
+ ========================================================================== */
+.cln-table-justify th:first-child,
+.cln-table-justify td:first-child {
+  padding-left: 0;
+}
+.cln-table-justify th:last-child,
+.cln-table-justify td:last-child {
+  padding-right: 0;
+}
+/* Cell size modifier
+ ========================================================================== */
+.cln-table-shrink {
+  width: 1px;
+}
+.cln-table-expand {
+  min-width: 300px;
+}
+/* Cell link modifier
+ ========================================================================== */
+/*
+ * BUG:Does not work with `cln-table-justify` at the moment
+ */
+.cln-table-link {
+  padding: 0 !important;
+}
+.cln-table-link > a {
+  display: block;
+  padding: 16px 12px;
+}
+.cln-table-small .cln-table-link > a {
+  padding: 10px 12px;
+}
+
+/* 
+*======================================================================================================
+*                                             LEGEND
+*======================================================================================================*/
+
+.cln-legend {
+  width: 100%;
+  color: inherit;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+/* 
+*======================================================================================================
+*                                            NAVBAR
+*======================================================================================================*/
+
+.cln-nav-bar {
+    display: flex;
+    position: relative;
+}
+
+.cln-nav-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 0 15px;
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.cln-nav-el > li > a {
+  color: #999;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+/*
+ * Hover
+ * Apply hover style also to focus state and if dropdown is opened
+ */
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a.uk-open {
+  color: #666;
+  outline: none;
+}
+/* OnClick */
+.uk-navbar-nav > li > a:active {
+  color: #333;
+}
+/* Active */
+.uk-navbar-nav > li.uk-active > a {
+  color: #333;
+}
+
+
+
